@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temp Conversion Tool</title>
+
+    <style>
+        body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image: url("temp7.jpg");   /* exact path */
+    background-size: 100% 100%;          /* force fit */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+
+
+        .box{
+            width:320px;
+            background:#3b0a45;
+            padding:25px;
+            border-radius:12px;
+            text-align:center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .box h2{
+            color:#fff;
+            margin-bottom:15px;
+        }
+
+        .field{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+            border-radius:6px;
+            border:none;
+            outline:none;
+            font-size:14px;
+        }
+
+        .btn{
+            width:100%;
+            padding:10px;
+            margin-top:10px;
+            border:none;
+            border-radius:6px;
+            background:#4da3ff;
+            color:white;
+            font-size:15px;
+            cursor:pointer;
+        }
+
+        .btn:hover{
+            background:#1f7ed8;
+        }
+
+        .output{
+            margin-top:15px;
+            color:#ffffff;
+            font-weight:600;
+            min-height:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Temperature Converter</h2>
+
+    <!-- Temperature Input -->
+    <input class="field" type="text" id="valueBox" placeholder="Type temperature">
+
+    <!-- Unit Selector -->
+    <select class="field" id="scale">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="kelvin">Kelvin (K)</option>
+    </select>
+
+    <!-- Button -->
+    <button class="btn" onclick="calculateTemp()">Convert</button>
+
+    <!-- Result -->
+    <div class="output" id="displayResult"></div>
+</div>
+
+<script>
+function calculateTemp(){
+
+    let inputValue = document.getElementById("valueBox").value;
+    let selectedUnit = document.getElementById("scale").value;
+    let output = document.getElementById("displayResult");
+
+    // Input validation
+    if(inputValue.trim() === "" || isNaN(inputValue)){
+        output.innerText = "⚠ Please enter a valid numeric value";
+        return;
+    }
+
+    let num = parseFloat(inputValue);
+    let finalText = "";
+
+    if(selectedUnit === "celsius"){
+        let fVal = (num * 9/5) + 32;
+        let kVal = num + 273.15;
+        finalText = `${fVal.toFixed(2)} °F  |  ${kVal.toFixed(2)} K`;
+    }
+    else if(selectedUnit === "fahrenheit"){
+        let cVal = (num - 32) * 5/9;
+        let kVal = cVal + 273.15;
+        finalText = `${cVal.toFixed(2)} °C  |  ${kVal.toFixed(2)} K`;
+    }
+    else if(selectedUnit === "kelvin"){
+        let cVal = num - 273.15;
+        let fVal = (cVal * 9/5) + 32;
+        finalText = `${cVal.toFixed(2)} °C  |  ${fVal.toFixed(2)} °F`;
+    }
+
+    output.innerText = "Converted: " + finalText;
+}
+</script>
+
+</body>
+</html>
