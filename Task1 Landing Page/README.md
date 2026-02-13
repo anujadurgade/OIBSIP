@@ -1,69 +1,26 @@
-# 🌐 Personal Portfolio Website
+🌿 Smart Garden Project 🌿
 
-This is my personal portfolio website created using **HTML and CSS**.
-I made this project to practice web development basics and to showcase my skills, projects, and personal information in a simple and clean way.
+I’m happy to share my Smart Garden web project 🚀  
+This project is based on the idea of using technology to make gardening and farming smarter and easier.
 
----
+✨ Project Highlights:
+• Smart and clean landing page design  
+• Simple and user-friendly layout  
+• Information about smart irrigation and plant monitoring  
+• Professional UI with soft colors  
+• Responsive design for all devices  
 
-## 📌 About This Project
+🌱 About the Project:
+Smart Garden is a concept where technology helps in plant care, water saving, and monitoring plant health.  
+It supports eco-friendly and sustainable gardening with modern digital solutions.
 
-This portfolio is designed as a beginner-friendly project.
-It focuses on:
+🛠 Technologies Used:
+• HTML  
+• CSS  
 
-* Clean layout
-* Simple design
-* Easy structure
-* Readable content
-* Beginner-level code
+📌 Purpose:
+This project was created for learning web development, improving UI design skills, and understanding real-world project structure.
 
----
+💬 I’m still learning and improving — feedback and suggestions are always welcome!
 
-## 🛠️ Technologies Used
-
-* HTML5
-* CSS3
-
----
-
-## ✨ Features
-
-* Simple and clean UI
-* Header and footer section
-* Profile section with image
-* About section
-* Skills section
-* Projects section
-* Career goals section
-* Contact information
-* Beginner-friendly structure
-
----
-
-## 🎯 Purpose of This Project
-
-* Practice HTML and CSS
-* Learn website structure
-* Build a personal portfolio
-* Improve frontend skills
-* Create a project for GitHub
-* Build a resume website
-
-
-## 📚 Learning Outcome
-
-* Basic web layout structure
-* CSS styling
-* Page organization
-* Portfolio design
-* Project documentation
-* GitHub project structure
-
----
-
-## 📄 License
-
-This project is for learning and educational purposes.
-
----
-
-⭐ If you like this project, feel free to star the repository!
+#WebDevelopment #HTML #CSS #SmartGarden #StudentProject #LearningJourney #FrontendDevelopment
